@@ -1,0 +1,3 @@
+An array is an ordered collection. Each element is accessed by its index.
+
+A hash is a key/value mapping. A value is accessed by providing its key.
