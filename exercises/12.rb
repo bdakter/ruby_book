@@ -1,4 +1,4 @@
-# require 'pry'
+require 'pry'
 
 contact_data = [
   ["joe@email.com", "123 Main st.", "555-123-4567"],
@@ -14,10 +14,13 @@ contacts = {
 
 contacts.each do |k, v|
   current_data = contact_data.shift
+binding.pry
+
   while current_data.size > 0
     v["email"] = current_data.shift
     v["address"] = current_data.shift
     v["phone"] = current_data.shift
+binding.pry
   end
 end
 
